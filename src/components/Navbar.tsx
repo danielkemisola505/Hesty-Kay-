@@ -98,18 +98,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
         {/* Brand Logo */}
         <button
           onClick={() => scrollToSection('home')}
-          className="flex items-center gap-2.5 text-left group cursor-pointer focus:outline-none"
+          className="flex items-center text-left group cursor-pointer focus:outline-none"
+          aria-label="Hestykay Web Studio - Go to Home"
         >
-          <div className="w-10 h-10 rounded-xl bg-yellow-400 dark:bg-yellow-400 flex items-center justify-center text-black font-extrabold text-lg shadow-md shadow-yellow-400/30 group-hover:scale-105 transition-transform border border-black/10 overflow-hidden">
-            <img src={PERSONAL_INFO.logoUrl} alt="Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-          </div>
-          <div>
-            <span className="text-base font-extrabold tracking-tight text-black dark:text-yellow-400 group-hover:text-yellow-600 dark:group-hover:text-yellow-300 transition-colors">
-              {PERSONAL_INFO.name}
-            </span>
-            <span className="block text-xs font-semibold text-zinc-800 dark:text-yellow-200/80">
-              WP & Squarespace Specialist
-            </span>
+          <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-yellow-400 flex items-center justify-center text-black shadow-md shadow-yellow-400/30 group-hover:scale-105 transition-transform border border-black/10 overflow-hidden">
+            <img src={PERSONAL_INFO.logoUrl} alt="Hestykay Web Studio Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </div>
         </button>
 
