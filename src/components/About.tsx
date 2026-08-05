@@ -78,9 +78,15 @@ export const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
           {/* Left Bio */}
           <div className="lg:col-span-7 space-y-5">
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-2xl overflow-hidden border-2 border-black dark:border-yellow-400 shrink-0 bg-black shadow-md">
-                <img src={OWNER_IMAGE} alt={PERSONAL_INFO.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <div className="flex items-center gap-4 sm:gap-5">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-black dark:border-yellow-400 shrink-0 bg-zinc-950 shadow-lg relative">
+                <img
+                  src={OWNER_IMAGE}
+                  alt={PERSONAL_INFO.name}
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: 'center 15%' }}
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-black text-black dark:text-yellow-400">
