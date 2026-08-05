@@ -123,7 +123,7 @@ export const Hero: React.FC<HeroProps> = ({ onPortfolioClick, onContactClick }) 
                     <span className="w-2.5 h-2.5 rounded-full bg-zinc-600 inline-block" />
                   </div>
                   <div className="text-[11px] font-mono text-yellow-300 bg-zinc-900 px-3 py-0.5 rounded-md border border-yellow-500/30">
-                    https://danielesther.studio
+                    https://hestykaywebstudio.com
                   </div>
                   <div className="flex items-center gap-1">
                     <span className="text-[10px] font-black text-yellow-400 uppercase tracking-wider">Verified</span>
@@ -131,20 +131,21 @@ export const Hero: React.FC<HeroProps> = ({ onPortfolioClick, onContactClick }) 
                 </div>
 
                 {/* Main Website Owner Photo */}
-                <div className="relative aspect-[4/3] rounded-xl overflow-hidden group border border-yellow-500/30 bg-black">
+                <div className="relative aspect-[4/4.5] sm:aspect-[4/4] rounded-xl overflow-hidden group border border-yellow-500/30 bg-zinc-950">
                   <img
                     src={HERO_IMAGE}
-                    alt="WordPress and Squarespace Showcase"
-                    className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500"
+                    alt="WordPress and Squarespace Specialist"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                    style={{ objectPosition: 'center 15%' }}
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-4">
-                    <div>
-                      <div className="inline-flex items-center gap-1.5 text-xs font-black px-2.5 py-0.5 rounded-full bg-yellow-400 text-black mb-1">
-                        <Award className="w-3 h-3 text-black" /> Website Specialist
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3.5">
+                    <div className="backdrop-blur-xs bg-black/40 px-3 py-1.5 rounded-lg border border-white/10">
+                      <div className="inline-flex items-center gap-1.5 text-[11px] font-black px-2 py-0.5 rounded-full bg-yellow-400 text-black mb-0.5 shadow-xs">
+                        <Award className="w-3 h-3 text-black stroke-[2.5]" /> Website Specialist
                       </div>
-                      <p className="text-base font-black text-white">{PERSONAL_INFO.name}</p>
-                      <p className="text-xs font-bold text-yellow-300">{PERSONAL_INFO.role}</p>
+                      <p className="text-sm font-black text-white drop-shadow-sm">{PERSONAL_INFO.name}</p>
+                      <p className="text-[11px] font-bold text-yellow-300">{PERSONAL_INFO.role}</p>
                     </div>
                   </div>
                 </div>

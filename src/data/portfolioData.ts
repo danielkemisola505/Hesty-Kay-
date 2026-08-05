@@ -1,6 +1,6 @@
 import { Project, Service, Skill, Testimonial, ProcessStep } from '../types';
 
-export const HERO_IMAGE = 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg';
+export const HERO_IMAGE = 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785942138/ChatGPT_Image_Aug_5_2026_12_39_42_PM_sj96y0.png';
 export const OWNER_IMAGE = 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785807074/WhatsApp_Image_2026-06-03_at_3.56.32_PM_1_ef7z4w.jpg';
 export const PORTFOLIO_IMAGE = 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg';
 export const LOGO_IMAGE = 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785806485/ChatGPT_Image_Aug_4_2026_02_16_51_AM_qb6txt.png';
