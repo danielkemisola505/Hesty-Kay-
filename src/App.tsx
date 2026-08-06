@@ -13,6 +13,7 @@ import { Process } from './components/Process';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { CustomCursor } from './components/CustomCursor';
+import { ChatBot } from './components/ChatBot';
 import { Project } from './types';
 
 export default function App() {
@@ -91,6 +92,9 @@ export default function App() {
           onClose={() => setSelectedProject(null)}
           onContactClick={() => scrollToContact(selectedProject ? `Project Inquiry: ${selectedProject.title}` : '')}
         />
+
+        {/* AI Studio Chatbot Assistant */}
+        <ChatBot onContactClick={(subject) => scrollToContact(subject)} />
       </div>
     </ThemeProvider>
   );

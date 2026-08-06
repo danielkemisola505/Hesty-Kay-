@@ -292,6 +292,28 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     content: 'The GSAP animations and sleek landing page Daniel built on WordPress helped us convert 18% of traffic during our product launch. His technical skill and design sense are world-class.',
     platformUsed: 'WordPress',
     projectType: 'Product Launch Landing Page'
+  },
+  {
+    id: 't5',
+    clientName: 'Elena Rostova',
+    role: 'Founder',
+    company: 'Velvet & Co Luxury Spa',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
+    rating: 5,
+    content: 'Daniel redesigned our booking experience and integrated a custom Squarespace layout that elevated our luxury brand. Client inquiries tripled in the first month!',
+    platformUsed: 'Squarespace',
+    projectType: 'E-Commerce & Booking Site'
+  },
+  {
+    id: 't6',
+    clientName: 'Alexandre Dubois',
+    role: 'CEO',
+    company: 'Apex Advisory Group',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&q=80',
+    rating: 5,
+    content: 'An incredible professional who delivers beyond expectations. The custom WordPress theme Daniel created is super fast, SEO optimized, and effortless for our team to update.',
+    platformUsed: 'WordPress',
+    projectType: 'Corporate Portal Redesign'
   }
 ];
 
