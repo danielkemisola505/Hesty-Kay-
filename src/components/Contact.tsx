@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { Mail, Phone, MapPin, Send, CheckCircle2, Sparkles, Calendar, MessageSquare, Dribbble, Github, Linkedin, Twitter, Instagram, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle2, Sparkles, Calendar, MessageSquare, Globe } from 'lucide-react';
+import { SiBehance, SiUpwork, SiPinterest } from 'react-icons/si';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -163,13 +164,11 @@ export const Contact: React.FC<ContactProps> = ({ initialSubject = '' }) => {
                 </div>
                 <div className="flex items-center gap-2">
                   {[
-                    { icon: Dribbble, url: PERSONAL_INFO.social.dribbble, name: 'Dribbble' },
-                    { icon: Github, url: PERSONAL_INFO.social.github, name: 'GitHub' },
-                    { icon: Linkedin, url: PERSONAL_INFO.social.linkedin, name: 'LinkedIn' },
-                    { icon: Twitter, url: PERSONAL_INFO.social.twitter, name: 'Twitter' },
-                    { icon: Instagram, url: PERSONAL_INFO.social.instagram, name: 'Instagram' }
+                    { icon: SiBehance, url: PERSONAL_INFO.social.behance, name: 'Behance' },
+                    { icon: SiUpwork, url: PERSONAL_INFO.social.upwork, name: 'Upwork' },
+                    { icon: SiPinterest, url: PERSONAL_INFO.social.pinterest, name: 'Pinterest' }
                   ].map((soc, idx) => {
-                    const SocIcon = soc.icon;
+                    const SocIcon = soc.icon as React.ComponentType<{ className?: string }>;
                     return (
                       <a
                         key={idx}
@@ -177,9 +176,9 @@ export const Contact: React.FC<ContactProps> = ({ initialSubject = '' }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={soc.name}
-                        className="p-2.5 rounded-xl border border-zinc-300 dark:border-yellow-500/30 bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-300 hover:bg-yellow-400 hover:text-black hover:border-black transition-all cursor-pointer"
+                        className="p-2.5 rounded-xl border border-zinc-300 dark:border-yellow-500/30 bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-300 hover:bg-yellow-400 hover:text-black hover:border-black transition-all cursor-pointer flex items-center justify-center"
                       >
-                        <SocIcon className="w-4 h-4 stroke-[2.5]" />
+                        <SocIcon className="w-4 h-4" />
                       </a>
                     );
                   })}

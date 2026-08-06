@@ -12,6 +12,7 @@ import { Testimonials } from './components/Testimonials';
 import { Process } from './components/Process';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { CustomCursor } from './components/CustomCursor';
 import { Project } from './types';
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
 
   return (
     <ThemeProvider>
+      <CustomCursor />
       <div className="min-h-screen bg-white dark:bg-[#050505] text-black dark:text-yellow-400 selection:bg-yellow-400 selection:text-black transition-colors duration-300">
         {/* Sticky Header Navigation */}
         <Navbar onContactClick={() => scrollToContact()} />

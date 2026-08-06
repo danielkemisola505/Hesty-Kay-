@@ -8,12 +8,12 @@ export const LOGO_IMAGE = 'https://res.cloudinary.com/v5y8qj7h/image/upload/v178
 export const PROJECTS_DATA: Project[] = [
   {
     id: 'luxe-interiors',
-    title: 'Aura Atelier Architecture',
-    client: 'Aura Design Co.',
+    title: 'Hannah Lee Interior',
+    client: 'Hannah Lee Design',
     industry: 'Architecture & Interior Design',
     platform: 'Squarespace',
     category: 'Squarespace',
-    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg',
+    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1786025923/interior_design_mockup_2_wqtwei.jpg',
     shortDescription: 'Minimalist, fluid Squarespace 7.1 showcase with bespoke typography and custom CSS hover galleries.',
     fullDescription: 'A custom Fluid Engine Squarespace website designed for an award-winning architectural firm. Features horizontal gallery sliders, custom page transitions, project filtering by typology, and integrated client consultation booking.',
     technologies: ['Squarespace 7.1', 'Fluid Engine', 'Custom CSS', 'JavaScript', 'Cal.com Embed', 'SEO Schema'],
@@ -33,78 +33,78 @@ export const PROJECTS_DATA: Project[] = [
   },
   {
     id: 'velour-botanicals',
-    title: 'Velour Organic Skincare',
-    client: 'Velour Beauty LLC',
+    title: 'Rare Beauty Skincare',
+    client: 'Rare Beauty LLC',
     industry: 'E-Commerce / Skincare',
-    platform: 'WordPress',
-    category: 'E-Commerce',
-    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg',
-    shortDescription: 'High-converting WordPress + WooCommerce store built with Elementor Pro and custom checkout flows.',
-    fullDescription: 'A custom WooCommerce e-commerce website with subscription purchasing options, dynamic ingredient highlights, cart upsells, and sub-second load times via Redis caching and WP Rocket optimization.',
-    technologies: ['WordPress', 'WooCommerce', 'Elementor Pro', 'PHP', 'Tailwind CSS', 'Stripe API'],
+    platform: 'Squarespace',
+    category: 'Squarespace',
+    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1786025977/skincare_mercy_1_wqa99t.png',
+    shortDescription: 'High-converting Squarespace 7.1 e-commerce store with custom Fluid Engine layout and seamless checkout.',
+    fullDescription: 'A custom Squarespace 7.1 e-commerce website built with Fluid Engine, featuring product subscriptions, dynamic ingredient showcases, custom CSS styling, and sub-second page loads.',
+    technologies: ['Squarespace 7.1', 'Fluid Engine', 'Custom CSS', 'JavaScript', 'Squarespace Commerce', 'Stripe API'],
     metrics: [
       { label: 'E-commerce Revenue', value: '+215%' },
       { label: 'Average Order Value', value: '+$38' },
-      { label: 'Core Web Vitals Score', value: '99/100' }
+      { label: 'Page Speed Index', value: '98/100' }
     ],
     featured: true,
-    liveUrl: 'https://wordpress.org',
-    deliverables: ['WooCommerce Store Setup', 'Subscription Engine', 'Custom Checkout', 'Speed Optimization'],
+    liveUrl: 'https://squarespace.com',
+    deliverables: ['Squarespace Commerce Store', 'Custom Fluid Layouts', 'Subscription Setup', 'Mobile Optimization'],
     clientQuote: {
-      text: 'Our online sales tripled within 60 days of launch. The custom WooCommerce workflow is fast, reliable, and effortless for our fulfillment team.',
+      text: 'Our online sales tripled within 60 days of launch. The custom Squarespace store is fast, reliable, and effortless for our team.',
       author: 'Sophia Martinez',
-      role: 'Founder, Velour Beauty'
+      role: 'Founder, Rare Beauty'
     }
   },
   {
-    id: 'nexus-venture-capital',
-    title: 'Nexus Capital Partners',
-    client: 'Nexus Group',
+    id: 'indinero-finance-partners',
+    title: 'indinero Finance Partners',
+    client: 'indinero Group',
     industry: 'Venture Capital & Finance',
-    platform: 'Squarespace',
-    category: 'Squarespace',
-    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg',
-    shortDescription: 'High-authority Squarespace corporate portal featuring dynamic investment portfolio grids and LP login integration.',
-    fullDescription: 'Designed a authoritative, sleek financial website for a $500M VC firm. Built on Squarespace with custom code snippets for interactive portfolio filtering, founder testimonials, and secure portal links.',
-    technologies: ['Squarespace', 'Custom Code Injection', 'JSON-LD Schema', 'Interactive JS Grids'],
+    platform: 'WordPress',
+    category: 'WordPress',
+    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1786026012/Squarespace_Finance_Website_design_mockup_pjtpll.jpg',
+    shortDescription: 'High-authority WordPress corporate portal featuring dynamic investment portfolio grids and client portal integration.',
+    fullDescription: 'Designed an authoritative, sleek financial website for indinero Finance Partners. Built on WordPress with custom theme development, interactive portfolio filtering, founder testimonials, and secure client portal links.',
+    technologies: ['WordPress', 'Elementor Pro', 'Custom PHP/CSS', 'JSON-LD Schema', 'Interactive Grids'],
     metrics: [
       { label: 'Dealflow Inquiries', value: '+85%' },
       { label: 'Time on Site', value: '4m 12s' }
     ],
     featured: true,
-    liveUrl: 'https://squarespace.com',
-    deliverables: ['Squarespace Site Design', 'Portfolio Grid Filter', 'LP Login Gateway', 'SEO Optimization']
+    liveUrl: 'https://wordpress.org',
+    deliverables: ['WordPress Site Design', 'Portfolio Grid Filter', 'Client Portal Gateway', 'SEO Optimization']
   },
   {
     id: 'solas-coffee-roasters',
     title: 'Solas Artisan Coffee',
     client: 'Solas Coffee Co.',
     industry: 'Food & Beverage / Hospitality',
-    platform: 'WordPress',
-    category: 'WordPress',
-    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg',
-    shortDescription: 'Editorial WordPress web build with Gutenberg blocks, coffee subscription portal, and location finder.',
-    fullDescription: 'Crafted a rich storytelling WordPress website celebrating artisanal coffee. Uses custom Gutenberg block development for lightning performance, interactive roast profile quizzes, and wholesale inquiry funnels.',
-    technologies: ['WordPress', 'Gutenberg Blocks', 'ACF Pro', 'Custom PHP/Sass', 'Mapbox API'],
+    platform: 'Squarespace',
+    category: 'Squarespace',
+    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1786025977/skincare_mercy_1_wqa99t.png',
+    shortDescription: 'Editorial Squarespace 7.1 web build with Fluid Engine layout, coffee subscription portal, and location finder.',
+    fullDescription: 'Crafted a rich storytelling Squarespace website celebrating artisanal coffee. Uses Fluid Engine custom layout blocks for lightning performance, interactive roast profile quizzes, and wholesale inquiry funnels.',
+    technologies: ['Squarespace 7.1', 'Fluid Engine', 'Custom CSS', 'JavaScript', 'Mapbox API'],
     metrics: [
       { label: 'Wholesale Leads', value: '+310%' },
       { label: 'Mobile Conversion Rate', value: '4.8%' }
     ],
     featured: false,
-    liveUrl: 'https://wordpress.org',
-    deliverables: ['Custom WordPress Theme', 'Coffee Quiz Tool', 'Store Locator', 'Wholesale Funnel']
+    liveUrl: 'https://squarespace.com',
+    deliverables: ['Squarespace Site Design', 'Coffee Quiz Tool', 'Store Locator', 'Wholesale Funnel']
   },
   {
     id: 'apex-saas-launch',
-    title: 'Apex AI Platform Landing Page',
-    client: 'Apex Tech Inc.',
+    title: 'Accelera Ai Automation Website',
+    client: 'Accelera AI Inc.',
     industry: 'Technology / SaaS',
     platform: 'WordPress',
-    category: 'Landing Page',
-    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg',
+    category: 'WordPress',
+    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1786028696/imageye___-_imgi_55_d86289242797841.697405b5d3153_efgvbv.jpg',
     shortDescription: 'High-converting WordPress landing page with interactive pricing calculator and GSAP micro-interactions.',
-    fullDescription: 'A high-stakes product launch page built on WordPress. Optimized for maximum conversions with sticky CTA bars, interactive pricing sliders, live feature comparisons, and zero bloat.',
-    technologies: ['WordPress', 'GSAP Animations', 'Tailwind CSS', 'HubSpot Integration', 'Cloudflare CDN'],
+    fullDescription: 'A high-stakes AI automation website built on WordPress. Optimized for maximum conversions with sticky CTA bars, interactive pricing sliders, live feature comparisons, and zero bloat.',
+    technologies: ['WordPress', 'Elementor Pro', 'GSAP Animations', 'Tailwind CSS', 'HubSpot Integration'],
     metrics: [
       { label: 'Signup Rate', value: '18.4%' },
       { label: 'LCP Score', value: '0.6s' }
@@ -115,22 +115,22 @@ export const PROJECTS_DATA: Project[] = [
   },
   {
     id: 'kinfolk-wellness',
-    title: 'Kinfolk Holistic Clinic',
-    client: 'Kinfolk Health',
+    title: 'Lemon health clinic',
+    client: 'Lemon Health Group',
     industry: 'Health & Wellness',
-    platform: 'Squarespace',
-    category: 'Squarespace',
-    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg',
-    shortDescription: 'Calming Squarespace patient portal with Acuity Scheduling, membership area, and practitioner profiles.',
-    fullDescription: 'Complete Squarespace website design and Acuity scheduling setup for a multi-practitioner holistic clinic. Designed with organic color palettes, patient intake form integration, and digital gift card sales.',
-    technologies: ['Squarespace 7.1', 'Acuity Scheduling', 'Member Areas', 'Custom CSS Styling'],
+    platform: 'WordPress',
+    category: 'WordPress',
+    image: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1786027391/Healthcare_Website_mockup_3_tipyum.jpg',
+    shortDescription: 'Calming WordPress patient portal with appointment scheduling, membership area, and practitioner profiles.',
+    fullDescription: 'Complete WordPress website design and scheduling setup for Lemon health clinic. Designed with organic color palettes, patient intake form integration, and digital booking.',
+    technologies: ['WordPress', 'Elementor Pro', 'Custom PHP/CSS', 'Appointment Booking', 'Intake Forms'],
     metrics: [
       { label: 'Online Bookings', value: '92% of total' },
       { label: 'Admin Time Saved', value: '15 hrs/wk' }
     ],
     featured: false,
-    liveUrl: 'https://squarespace.com',
-    deliverables: ['Squarespace Setup', 'Acuity Booking System', 'Intake Forms', 'Member Portal']
+    liveUrl: 'https://wordpress.org',
+    deliverables: ['WordPress Setup', 'Booking System', 'Intake Forms', 'Member Portal']
   }
 ];
 
@@ -367,11 +367,8 @@ export const PERSONAL_INFO = {
   location: 'Available Worldwide',
   availability: '🟢 Accepting New Projects for Q3/Q4',
   social: {
-    dribbble: 'https://dribbble.com',
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://twitter.com',
-    behance: 'https://behance.net',
-    instagram: 'https://instagram.com'
+    behance: 'https://www.behance.net/danielesther1',
+    upwork: 'https://www.upwork.com/freelancers/~01c27808a4c341d0ff?nav_dir=pop',
+    pinterest: 'https://www.pinterest.com/danielkemisola506/'
   }
 };

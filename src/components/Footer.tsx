@@ -1,17 +1,17 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { ArrowUp, Heart, Dribbble, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
+import { SiBehance, SiUpwork, SiPinterest } from 'react-icons/si';
 import gsap from 'gsap';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: 0,
-      ease: 'power3.inOut'
-    });
-    // Fallback native smooth scroll
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const homeEl = document.getElementById('home');
+    if (homeEl) {
+      homeEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const scrollToSection = (id: string) => {
@@ -75,13 +75,11 @@ export const Footer: React.FC = () => {
             </p>
             <div className="flex items-center gap-2">
               {[
-                { icon: Dribbble, url: PERSONAL_INFO.social.dribbble, label: 'Dribbble' },
-                { icon: Github, url: PERSONAL_INFO.social.github, label: 'GitHub' },
-                { icon: Linkedin, url: PERSONAL_INFO.social.linkedin, label: 'LinkedIn' },
-                { icon: Twitter, url: PERSONAL_INFO.social.twitter, label: 'Twitter' },
-                { icon: Instagram, url: PERSONAL_INFO.social.instagram, label: 'Instagram' }
+                { icon: SiBehance, url: PERSONAL_INFO.social.behance, label: 'Behance' },
+                { icon: SiUpwork, url: PERSONAL_INFO.social.upwork, label: 'Upwork' },
+                { icon: SiPinterest, url: PERSONAL_INFO.social.pinterest, label: 'Pinterest' }
               ].map((soc, idx) => {
-                const SocIcon = soc.icon;
+                const SocIcon = soc.icon as React.ComponentType<{ className?: string }>;
                 return (
                   <a
                     key={idx}
@@ -89,9 +87,9 @@ export const Footer: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={soc.label}
-                    className="p-2.5 rounded-xl border border-yellow-500/30 bg-zinc-900 text-yellow-400 hover:text-black hover:bg-yellow-400 hover:border-black transition-colors cursor-pointer"
+                    className="p-2.5 rounded-xl border border-yellow-500/30 bg-zinc-900 text-yellow-400 hover:text-black hover:bg-yellow-400 hover:border-black transition-colors cursor-pointer flex items-center justify-center"
                   >
-                    <SocIcon className="w-4 h-4 stroke-[2.5]" />
+                    <SocIcon className="w-4 h-4" />
                   </a>
                 );
               })}
