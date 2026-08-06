@@ -30,11 +30,11 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-zinc-900">
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-yellow-400 text-black font-black text-base flex items-center justify-center border border-black shadow-md overflow-hidden">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-yellow-400 text-black font-black text-base flex items-center justify-center border border-black/20 shadow-md shadow-yellow-400/20 overflow-hidden shrink-0">
                 <img src={PERSONAL_INFO.logoUrl} alt="Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
-              <span className="text-lg font-black text-yellow-400 tracking-tight">
+              <span className="text-xl sm:text-2xl font-black text-yellow-400 tracking-tight">
                 {PERSONAL_INFO.name}
               </span>
             </div>
