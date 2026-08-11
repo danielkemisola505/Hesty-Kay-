@@ -22,7 +22,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
     { id: 'services', label: 'Services' },
     { id: 'portfolio', label: 'Portfolio' },
     { id: 'estimator', label: 'Estimator' },
-    { id: 'skills', label: 'Skills' },
     { id: 'testimonials', label: 'Reviews' },
     { id: 'process', label: 'Process' },
     { id: 'contact', label: 'Contact' }

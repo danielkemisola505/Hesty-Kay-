@@ -7,7 +7,6 @@ import { Services } from './components/Services';
 import { PlatformEstimator } from './components/PlatformEstimator';
 import { Projects } from './components/Projects';
 import { ProjectModal } from './components/ProjectModal';
-import { Skills } from './components/Skills';
 import { Testimonials } from './components/Testimonials';
 import { Process } from './components/Process';
 import { Contact } from './components/Contact';
@@ -69,9 +68,6 @@ export default function App() {
           <Projects
             onSelectProject={(project) => setSelectedProject(project)}
           />
-
-          {/* Technical Skills & Proficiency */}
-          <Skills />
 
           {/* Testimonials & Reviews */}
           <Testimonials />
