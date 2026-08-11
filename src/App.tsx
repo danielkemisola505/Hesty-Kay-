@@ -7,6 +7,7 @@ import { Services } from './components/Services';
 import { PlatformEstimator } from './components/PlatformEstimator';
 import { Projects } from './components/Projects';
 import { ProjectModal } from './components/ProjectModal';
+import { CalendlyModal } from './components/CalendlyModal';
 import { Testimonials } from './components/Testimonials';
 import { Process } from './components/Process';
 import { Contact } from './components/Contact';
@@ -18,6 +19,7 @@ import { Project } from './types';
 export default function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [contactSubject, setContactSubject] = useState<string>('');
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState<boolean>(false);
 
   const scrollToContact = (subject?: string) => {
     if (subject) {
@@ -36,12 +38,19 @@ export default function App() {
     }
   };
 
+  const openCalendly = () => {
+    setIsCalendlyOpen(true);
+  };
+
   return (
     <ThemeProvider>
       <CustomCursor />
       <div className="min-h-screen bg-white dark:bg-[#050505] text-black dark:text-yellow-400 selection:bg-yellow-400 selection:text-black transition-colors duration-300">
         {/* Sticky Header Navigation */}
-        <Navbar onContactClick={() => scrollToContact()} />
+        <Navbar
+          onContactClick={() => scrollToContact()}
+          onBookProjectClick={openCalendly}
+        />
 
         {/* Main Content Sections */}
         <main>
@@ -49,6 +58,7 @@ export default function App() {
           <Hero
             onPortfolioClick={scrollToPortfolio}
             onContactClick={() => scrollToContact()}
+            onBookProjectClick={openCalendly}
           />
 
           {/* About Me Section */}
@@ -76,7 +86,10 @@ export default function App() {
           <Process />
 
           {/* Contact Section */}
-          <Contact initialSubject={contactSubject} />
+          <Contact
+            initialSubject={contactSubject}
+            onBookProjectClick={openCalendly}
+          />
         </main>
 
         {/* Footer */}
@@ -87,6 +100,12 @@ export default function App() {
           project={selectedProject}
           onClose={() => setSelectedProject(null)}
           onContactClick={() => scrollToContact(selectedProject ? `Project Inquiry: ${selectedProject.title}` : '')}
+        />
+
+        {/* Calendly Booking Overlay Modal */}
+        <CalendlyModal
+          isOpen={isCalendlyOpen}
+          onClose={() => setIsCalendlyOpen(false)}
         />
 
         {/* AI Studio Chatbot Assistant */}

@@ -388,6 +388,7 @@ export const PERSONAL_INFO = {
   whatsapp: 'https://wa.me/2348130051246',
   location: 'Available Worldwide',
   availability: '🟢 Accepting New Projects for Q3/Q4',
+  calendly: 'https://calendly.com/danielkemisola505/30min',
   social: {
     behance: 'https://www.behance.net/danielesther1',
     upwork: 'https://www.upwork.com/freelancers/~01c27808a4c341d0ff?nav_dir=pop',

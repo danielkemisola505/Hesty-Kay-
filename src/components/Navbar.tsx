@@ -6,9 +6,10 @@ import gsap from 'gsap';
 
 interface NavbarProps {
   onContactClick: () => void;
+  onBookProjectClick?: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onContactClick, onBookProjectClick }) => {
   const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -138,15 +139,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
           </button>
 
           {/* Book A Project CTA Button */}
-          <a
-            href="https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={onBookProjectClick || onContactClick}
             className="flex items-center gap-2 px-4 py-2 rounded-xl bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold text-xs transition-all shadow-md shadow-yellow-500/20 hover:shadow-lg hover:shadow-yellow-500/30 cursor-pointer active:scale-95 border border-yellow-500/40"
           >
             <span>Book A Project</span>
             <ArrowUpRight className="w-3.5 h-3.5 stroke-[2.5]" />
-          </a>
+          </button>
         </div>
 
         {/* Mobile Hamburger & Theme Switch */}
@@ -192,12 +191,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  onContactClick();
+                  if (onBookProjectClick) {
+                    onBookProjectClick();
+                  } else {
+                    onContactClick();
+                  }
                 }}
-                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-yellow-400 text-black font-extrabold text-sm shadow-md"
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-yellow-400 text-black font-extrabold text-sm shadow-md cursor-pointer"
               >
                 <Sparkles className="w-4 h-4 text-black" />
-                <span>Start A Project</span>
+                <span>Book A Project</span>
               </button>
             </div>
           </div>

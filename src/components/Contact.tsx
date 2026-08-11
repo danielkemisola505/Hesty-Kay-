@@ -9,9 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface ContactProps {
   initialSubject?: string;
+  onBookProjectClick?: () => void;
 }
 
-export const Contact: React.FC<ContactProps> = ({ initialSubject = '' }) => {
+export const Contact: React.FC<ContactProps> = ({ initialSubject = '', onBookProjectClick }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -146,15 +147,14 @@ export const Contact: React.FC<ContactProps> = ({ initialSubject = '' }) => {
 
               {/* Discovery Call Button / Book A Project */}
               <div className="pt-2">
-                <a
-                  href="https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={onBookProjectClick}
                   className="w-full py-3.5 px-4 rounded-xl bg-yellow-400 hover:bg-yellow-500 text-black font-black text-xs transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer border border-yellow-500"
                 >
                   <Calendar className="w-4 h-4 stroke-[2.5]" />
                   <span>Book A Project</span>
-                </a>
+                </button>
               </div>
 
               {/* Social Media Links */}

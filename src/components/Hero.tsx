@@ -6,9 +6,10 @@ import gsap from 'gsap';
 interface HeroProps {
   onPortfolioClick: () => void;
   onContactClick: () => void;
+  onBookProjectClick?: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onPortfolioClick, onContactClick }) => {
+export const Hero: React.FC<HeroProps> = ({ onPortfolioClick, onContactClick, onBookProjectClick }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const badgeRef = useRef<HTMLDivElement>(null);
@@ -83,15 +84,13 @@ export const Hero: React.FC<HeroProps> = ({ onPortfolioClick, onContactClick }) 
                 <ArrowDown className="w-4 h-4 stroke-[2.5]" />
               </button>
 
-              <a
-                href="https://res.cloudinary.com/v5y8qj7h/image/upload/v1785804169/1d3f96229144389.692e4f47a6130_q8dqti.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={onBookProjectClick || onContactClick}
                 className="w-full sm:w-auto px-7 py-3.5 rounded-xl border-2 border-black dark:border-yellow-400 bg-black dark:bg-yellow-400 text-yellow-400 dark:text-black hover:bg-zinc-900 dark:hover:bg-yellow-300 font-extrabold text-sm transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer active:scale-98"
               >
                 <span>Book A Project</span>
                 <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
-              </a>
+              </button>
             </div>
 
             {/* Fast Stats Pill */}
