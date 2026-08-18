@@ -72,7 +72,7 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = ({ isOpen, onClose })
                     </span>
                   </div>
                   <p className="text-xs text-zinc-400 font-medium hidden sm:block">
-                    Select a date & time to discuss your project with Daniel
+                    Select a date & time to discuss your project with Esther
                   </p>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = ({ isOpen, onClose })
                 width="100%"
                 height="100%"
                 frameBorder="0"
-                title="Schedule a 30-Min Meeting with Daniel (Hestykay)"
+                title="Schedule a 30-Min Meeting with Esther (Hestykay)"
                 onLoad={() => setIsLoading(false)}
                 className="w-full h-full border-none"
               />

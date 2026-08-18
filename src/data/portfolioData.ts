@@ -26,7 +26,7 @@ export const PROJECTS_DATA: Project[] = [
     liveUrl: 'https://squarespace.com',
     deliverables: ['Custom Squarespace Layout', 'Brand Guidelines Integration', 'Mobile Optimization', 'SEO Setup'],
     clientQuote: {
-      text: 'Daniel transformed our outdated portfolio into an ethereal, high-end online gallery. Clients comment on the seamless experience daily.',
+      text: 'Esther transformed our outdated portfolio into an ethereal, high-end online gallery. Clients comment on the seamless experience daily.',
       author: 'Julian Vance',
       role: 'Principal Architect, Aura Design Co.'
     }
@@ -256,7 +256,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     company: 'Luminary Brand Studio',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
     rating: 5,
-    content: 'Daniel is an absolute wizard with both WordPress and Squarespace. He took our Figma designs and built a pixel-perfect Squarespace site with custom CSS interactions that blew our team away.',
+    content: 'Esther is an absolute wizard with both WordPress and Squarespace. She took our Figma designs and built a pixel-perfect Squarespace site with custom CSS interactions that blew our team away.',
     platformUsed: 'Squarespace',
     projectType: 'Agency Website & Portfolio'
   },
@@ -267,7 +267,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     company: 'Aetheria Goods',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
     rating: 5,
-    content: 'Our WooCommerce store was sluggish and losing sales. Daniel overhauled our WordPress setup, optimized our speed, and redesigned our checkout. Our sales skyrocketed 215% in two months!',
+    content: 'Our WooCommerce store was sluggish and losing sales. Esther overhauled our WordPress setup, optimized our speed, and redesigned our checkout. Our sales skyrocketed 215% in two months!',
     platformUsed: 'WordPress',
     projectType: 'WooCommerce Redesign'
   },
@@ -278,7 +278,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     company: 'Vanguard Legal Group',
     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80',
     rating: 5,
-    content: 'Fast, professional, and extraordinarily attentive to detail. Daniel guided us on when to choose Squarespace versus WordPress, saving us thousands in unnecessary maintenance costs.',
+    content: 'Fast, professional, and extraordinarily attentive to detail. Esther guided us on when to choose Squarespace versus WordPress, saving us thousands in unnecessary maintenance costs.',
     platformUsed: 'Squarespace',
     projectType: 'Corporate Web Redesign'
   },
@@ -289,7 +289,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     company: 'SaaSFlow Systems',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
     rating: 5,
-    content: 'The GSAP animations and sleek landing page Daniel built on WordPress helped us convert 18% of traffic during our product launch. His technical skill and design sense are world-class.',
+    content: 'The GSAP animations and sleek landing page Esther built on WordPress helped us convert 18% of traffic during our product launch. Her technical skill and design sense are world-class.',
     platformUsed: 'WordPress',
     projectType: 'Product Launch Landing Page'
   },
@@ -300,7 +300,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     company: 'Velvet & Co Luxury Spa',
     avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
     rating: 5,
-    content: 'Daniel redesigned our booking experience and integrated a custom Squarespace layout that elevated our luxury brand. Client inquiries tripled in the first month!',
+    content: 'Esther redesigned our booking experience and integrated a custom Squarespace layout that elevated our luxury brand. Client inquiries tripled in the first month!',
     platformUsed: 'Squarespace',
     projectType: 'E-Commerce & Booking Site'
   },
@@ -311,7 +311,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     company: 'Apex Advisory Group',
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&q=80',
     rating: 5,
-    content: 'An incredible professional who delivers beyond expectations. The custom WordPress theme Daniel created is super fast, SEO optimized, and effortless for our team to update.',
+    content: 'An incredible professional who delivers beyond expectations. The custom WordPress theme Esther created is super fast, SEO optimized, and effortless for our team to update.',
     platformUsed: 'WordPress',
     projectType: 'Corporate Portal Redesign'
   }
@@ -375,7 +375,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
 ];
 
 export const PERSONAL_INFO = {
-  name: 'Daniel Esther',
+  name: 'Esther Daniel',
   logoUrl: 'https://res.cloudinary.com/v5y8qj7h/image/upload/v1785806485/ChatGPT_Image_Aug_4_2026_02_16_51_AM_qb6txt.png',
   role: 'WordPress & Squarespace Designer & Developer',
   tagline: 'Crafting Bespoke, High-Converting Web Experiences with Precision & Style.',

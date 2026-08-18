@@ -17,7 +17,7 @@ interface ChatBotProps {
 const QUICK_QUESTIONS = [
   'What services do you offer?',
   'How much for a WordPress site?',
-  'Can Daniel build custom Squarespace sites?',
+  'Can Esther build custom Squarespace sites?',
   'How do I book a consultation call?',
 ];
 
@@ -27,7 +27,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({ onContactClick }) => {
     {
       id: 'welcome-1',
       role: 'model',
-      text: "👋 Hi there! I'm **ChatGPT Assistant**, virtual AI assistant for **Hestykay Web Studio**.\n\nHow can I help you today? Ask me anything about Daniel's **WordPress**, **Squarespace**, or **custom web design** services!",
+      text: "👋 Hi there! I'm **ChatGPT Assistant**, virtual AI assistant for **Hestykay Web Studio**.\n\nHow can I help you today? Ask me anything about Esther's **WordPress**, **Squarespace**, or **custom web design** services!",
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     },
   ]);
@@ -91,7 +91,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({ onContactClick }) => {
       const botMsg: Message = {
         id: `m-${Date.now()}`,
         role: 'model',
-        text: data.reply || "I'm having a slight connection issue. Please feel free to reach out to Daniel directly via the contact form!",
+        text: data.reply || "I'm having a slight connection issue. Please feel free to reach out to Esther directly via the contact form!",
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
 
@@ -101,7 +101,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({ onContactClick }) => {
       const errorMsg: Message = {
         id: `err-${Date.now()}`,
         role: 'model',
-        text: "I'm sorry, I encountered a temporary network glitch. You can send a direct message to Daniel using the **Contact** form below!",
+        text: "I'm sorry, I encountered a temporary network glitch. You can send a direct message to Esther using the **Contact** form below!",
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
       setMessages((prev) => [...prev, errorMsg]);
@@ -115,7 +115,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({ onContactClick }) => {
       {
         id: `welcome-${Date.now()}`,
         role: 'model',
-        text: "Chat cleared! How else can I assist you with Daniel's web design services?",
+        text: "Chat cleared! How else can I assist you with Esther's web design services?",
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       },
     ]);

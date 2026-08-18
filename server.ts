@@ -31,11 +31,11 @@ function getGeminiClient(): GoogleGenAI {
   return aiClient;
 }
 
-const SYSTEM_INSTRUCTION = `You are "ChatGPT Assistant", the official AI assistant powered by ChatGPT for Hestykay Web Studio (founded by Daniel / Hestykay).
-Your goal is to warmly welcome visitors, answer questions about Daniel's web design and development services, help estimate project scopes, and encourage booking consultations or sending messages.
+const SYSTEM_INSTRUCTION = `You are "ChatGPT Assistant", the official AI assistant powered by ChatGPT for Hestykay Web Studio (founded by Esther / Hestykay).
+Your goal is to warmly welcome visitors, answer questions about Esther's web design and development services, help estimate project scopes, and encourage booking consultations or sending messages.
 
 About Hestykay Web Studio:
-- Founder & Lead Developer/Designer: Daniel (Hestykay)
+- Founder & Lead Developer/Designer: Esther Daniel (Hestykay)
 - Specialization: High-converting WordPress websites, custom Squarespace design, bespoke landing pages, e-commerce stores (WooCommerce/Squarespace Commerce), GSAP/Motion micro-interactions, responsive UI/UX, and SEO optimization.
 - Core Offerings:
   1. WordPress Development: Custom themes, Elementor Pro, WooCommerce, speed & security optimization.
@@ -78,7 +78,7 @@ app.post('/api/chat', async (req, res) => {
       },
     });
 
-    const reply = response.text || "I'm sorry, I couldn't process that right now. Feel free to use the contact form below to reach Daniel directly!";
+    const reply = response.text || "I'm sorry, I couldn't process that right now. Feel free to use the contact form below to reach Esther directly!";
 
     return res.json({ reply });
   } catch (error: any) {
