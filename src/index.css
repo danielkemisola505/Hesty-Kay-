@@ -123,3 +123,14 @@ section {
 .animate-glow {
   animation: glowPulse 8s infinite ease-in-out;
 }
+
+/* Hide custom cursor and helper overlays during print or screenshot capture */
+@media print {
+  #custom-cursor,
+  .custom-cursor,
+  [data-cursor] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
