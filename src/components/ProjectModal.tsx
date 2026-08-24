@@ -28,7 +28,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
           <button
             onClick={onClose}
             aria-label="Close project modal"
-            className="p-2 rounded-full border-2 border-zinc-300 dark:border-yellow-500/30 text-black dark:text-yellow-400 hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer"
+            className="p-2 rounded-xl border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-200 cursor-pointer active:scale-95 shadow-sm"
           >
             <X className="w-5 h-5 stroke-[2.5]" />
           </button>
@@ -49,10 +49,10 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute bottom-4 right-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-yellow-400 text-black hover:bg-yellow-500 font-black text-xs transition-all shadow-lg border border-yellow-500"
+                className="absolute bottom-4 right-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-yellow-400 bg-yellow-400 text-black hover:bg-black hover:text-yellow-400 font-black text-xs transition-all duration-200 shadow-lg cursor-pointer active:scale-95 group"
               >
                 <span>Visit Live Platform</span>
-                <ExternalLink className="w-3.5 h-3.5 stroke-[2.5]" />
+                <ExternalLink className="w-3.5 h-3.5 stroke-[2.5] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
             )}
           </div>
@@ -143,10 +143,10 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
               onClose();
               onContactClick();
             }}
-            className="px-5 py-2.5 rounded-xl bg-yellow-400 hover:bg-yellow-500 text-black font-black text-xs transition-all shadow-md flex items-center gap-2 cursor-pointer border border-yellow-500"
+            className="px-5 py-2.5 rounded-xl border-2 border-yellow-400 bg-yellow-400 hover:bg-black text-black hover:text-yellow-400 font-black text-xs transition-all duration-200 shadow-md flex items-center gap-2 cursor-pointer active:scale-95 group"
           >
             <span>Request Similar Site</span>
-            <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" />
+            <ArrowRight className="w-3.5 h-3.5 stroke-[2.5] transition-transform duration-200 group-hover:translate-x-1" />
           </button>
         </div>
       </div>

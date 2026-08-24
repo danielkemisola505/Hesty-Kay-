@@ -87,7 +87,7 @@ export const Footer: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={soc.label}
-                    className="p-2.5 rounded-xl border border-yellow-500/30 bg-zinc-900 text-yellow-400 hover:text-black hover:bg-yellow-400 hover:border-black transition-colors cursor-pointer flex items-center justify-center"
+                    className="p-2.5 rounded-xl border-2 border-yellow-400/50 hover:border-yellow-400 bg-black text-yellow-400 hover:text-black hover:bg-yellow-400 transition-all duration-200 cursor-pointer flex items-center justify-center active:scale-95 shadow-sm"
                   >
                     <SocIcon className="w-4 h-4" />
                   </a>
@@ -103,13 +103,13 @@ export const Footer: React.FC = () => {
             <span>© {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.</span>
           </div>
 
-          {/* Smooth Back to Top Button */}
+          {/* Smooth Back to Top Button: Yellow border, black bg, yellow text -> hover yellow bg, black text */}
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-yellow-400/10 border border-yellow-500/40 hover:border-yellow-400 hover:bg-yellow-400 text-yellow-300 hover:text-black text-xs font-black transition-all cursor-pointer group"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-yellow-400 bg-black hover:bg-yellow-400 text-yellow-400 hover:text-black text-xs font-black transition-all duration-200 cursor-pointer active:scale-95 group shadow-sm"
           >
             <span>Back to top</span>
-            <ArrowUp className="w-3.5 h-3.5 group-hover:-translate-y-1 transition-transform stroke-[2.5]" />
+            <ArrowUp className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform stroke-[2.5]" />
           </button>
         </div>
       </div>

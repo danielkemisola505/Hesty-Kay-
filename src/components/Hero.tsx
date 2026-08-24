@@ -76,20 +76,22 @@ export const Hero: React.FC<HeroProps> = ({ onPortfolioClick, onContactClick, on
 
             {/* CTA Buttons */}
             <div ref={buttonsRef} className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+              {/* Button 1: Yellow border, black background, yellow text -> Hover: yellow background, black text */}
               <button
                 onClick={onPortfolioClick}
-                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold text-sm transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer active:scale-98 border border-yellow-500"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-xl border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 font-extrabold text-sm transition-all duration-200 shadow-md flex items-center justify-center gap-2 cursor-pointer active:scale-95 group"
               >
                 <span>View Portfolio</span>
-                <ArrowDown className="w-4 h-4 stroke-[2.5]" />
+                <ArrowDown className="w-4 h-4 stroke-[2.5] transition-transform duration-200 group-hover:translate-y-0.5" />
               </button>
 
+              {/* Button 2: Yellow background, black text -> Hover: black background, black/yellow border, yellow text */}
               <button
                 onClick={onBookProjectClick || onContactClick}
-                className="w-full sm:w-auto px-7 py-3.5 rounded-xl border-2 border-black dark:border-yellow-400 bg-black dark:bg-yellow-400 text-yellow-400 dark:text-black hover:bg-zinc-900 dark:hover:bg-yellow-300 font-extrabold text-sm transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer active:scale-98"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-xl border-2 border-yellow-400 bg-yellow-400 text-black hover:bg-black hover:text-yellow-400 hover:border-yellow-400 font-extrabold text-sm transition-all duration-200 shadow-md shadow-yellow-500/20 hover:shadow-lg flex items-center justify-center gap-2 cursor-pointer active:scale-95 group"
               >
                 <span>Book A Project</span>
-                <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
+                <ArrowUpRight className="w-4 h-4 stroke-[2.5] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </button>
             </div>
 

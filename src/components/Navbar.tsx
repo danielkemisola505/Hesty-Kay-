@@ -132,19 +132,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick, onBookProjectCli
           <button
             onClick={toggleTheme}
             aria-label="Toggle dark and light mode"
-            className="p-2.5 rounded-xl border border-zinc-300 dark:border-yellow-500/30 bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all cursor-pointer hover:scale-105"
+            className="p-2.5 rounded-xl border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-200 cursor-pointer active:scale-95 shadow-sm"
             title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
           >
-            {theme === 'dark' ? <Sun className="w-4 h-4 text-yellow-400 group-hover:text-black" /> : <Moon className="w-4 h-4 text-black" />}
+            {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
 
-          {/* Book A Project CTA Button */}
+          {/* Book A Project CTA Button: Yellow bg, black text -> hover black bg, yellow text */}
           <button
             onClick={onBookProjectClick || onContactClick}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold text-xs transition-all shadow-md shadow-yellow-500/20 hover:shadow-lg hover:shadow-yellow-500/30 cursor-pointer active:scale-95 border border-yellow-500/40"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-yellow-400 bg-yellow-400 text-black hover:bg-black hover:text-yellow-400 hover:border-yellow-400 font-extrabold text-xs transition-all duration-200 shadow-md shadow-yellow-500/20 hover:shadow-lg cursor-pointer active:scale-95 group"
           >
             <span>Book A Project</span>
-            <ArrowUpRight className="w-3.5 h-3.5 stroke-[2.5]" />
+            <ArrowUpRight className="w-3.5 h-3.5 stroke-[2.5] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </button>
         </div>
 
@@ -153,16 +153,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick, onBookProjectCli
           <button
             onClick={toggleTheme}
             aria-label="Toggle dark and light mode"
-            className="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300"
+            className="p-2 rounded-xl border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black transition-colors"
           >
-            {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
+            {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Open mobile menu"
-            className="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300"
+            className="p-2 rounded-xl border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black transition-colors"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {mobileMenuOpen ? <X className="w-5 h-5 stroke-[2.5]" /> : <Menu className="w-5 h-5 stroke-[2.5]" />}
           </button>
         </div>
       </div>
@@ -197,9 +197,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick, onBookProjectCli
                     onContactClick();
                   }
                 }}
-                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-yellow-400 text-black font-extrabold text-sm shadow-md cursor-pointer"
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-yellow-400 bg-yellow-400 text-black hover:bg-black hover:text-yellow-400 hover:border-yellow-400 font-extrabold text-sm shadow-md transition-all duration-200 cursor-pointer active:scale-95 group"
               >
-                <Sparkles className="w-4 h-4 text-black" />
+                <Sparkles className="w-4 h-4 transition-colors" />
                 <span>Book A Project</span>
               </button>
             </div>

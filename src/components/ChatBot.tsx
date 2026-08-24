@@ -173,14 +173,14 @@ export const ChatBot: React.FC<ChatBotProps> = ({ onContactClick }) => {
 
             <button
               onClick={() => setIsOpen(true)}
-              className="flex items-center gap-2.5 px-4.5 py-3.5 rounded-full bg-black dark:bg-zinc-900 text-yellow-400 border-2 border-yellow-400 shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
+              className="flex items-center gap-2.5 px-4.5 py-3.5 rounded-full border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black shadow-2xl active:scale-95 transition-all duration-200 cursor-pointer group"
               aria-label="Open ChatGPT Assistant"
             >
               <div className="relative">
-                <Bot className="w-6 h-6 text-yellow-400" />
+                <Bot className="w-6 h-6 stroke-[2.5]" />
                 <Sparkles className="w-3.5 h-3.5 text-yellow-300 absolute -top-1 -right-1 animate-pulse" />
               </div>
-              <span className="font-bold text-sm text-yellow-400 hidden sm:inline">Ask ChatGPT</span>
+              <span className="font-extrabold text-sm hidden sm:inline">Ask ChatGPT</span>
             </button>
           </motion.div>
         )}
@@ -292,7 +292,7 @@ export const ChatBot: React.FC<ChatBotProps> = ({ onContactClick }) => {
                       <button
                         key={idx}
                         onClick={() => handleSendMessage(q)}
-                        className="text-xs text-left px-3 py-1.5 rounded-xl bg-white dark:bg-zinc-900 text-black dark:text-yellow-300 border border-zinc-300 dark:border-yellow-500/30 hover:border-yellow-400 hover:bg-yellow-400/10 transition-all cursor-pointer font-medium"
+                        className="text-xs text-left px-3 py-1.5 rounded-xl border-2 border-yellow-400/50 hover:border-yellow-400 bg-black text-yellow-300 hover:bg-yellow-400 hover:text-black transition-all duration-200 cursor-pointer font-bold active:scale-95"
                       >
                         {q}
                       </button>
@@ -335,10 +335,10 @@ export const ChatBot: React.FC<ChatBotProps> = ({ onContactClick }) => {
               <button
                 type="submit"
                 disabled={!inputText.trim() || isLoading}
-                className="p-2.5 rounded-xl bg-yellow-400 text-black hover:bg-yellow-300 disabled:opacity-40 disabled:hover:bg-yellow-400 transition-all cursor-pointer shrink-0"
+                className="p-2.5 rounded-xl border-2 border-yellow-400 bg-yellow-400 text-black hover:bg-black hover:text-yellow-400 disabled:opacity-40 transition-all duration-200 cursor-pointer shrink-0 active:scale-95"
                 aria-label="Send Message"
               >
-                <Send className="w-4 h-4" />
+                <Send className="w-4 h-4 stroke-[2.5]" />
               </button>
             </form>
           </motion.div>

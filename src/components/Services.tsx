@@ -119,10 +119,10 @@ export const Services: React.FC<ServicesProps> = ({ onInquireService }) => {
 
                   <button
                     onClick={() => onInquireService(service.title)}
-                    className="w-full py-2.5 px-4 rounded-xl border border-yellow-500 bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold text-xs transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-sm active:scale-98"
+                    className="w-full py-2.5 px-4 rounded-xl border-2 border-yellow-400 bg-yellow-400 hover:bg-black text-black hover:text-yellow-400 font-extrabold text-xs transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-sm active:scale-95 group"
                   >
                     <span>Inquire About This Service</span>
-                    <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                    <ArrowRight className="w-3.5 h-3.5 stroke-[2.5] transition-transform duration-200 group-hover:translate-x-1" />
                   </button>
                 </div>
               </div>

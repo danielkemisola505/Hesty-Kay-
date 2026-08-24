@@ -150,7 +150,7 @@ export const Contact: React.FC<ContactProps> = ({ initialSubject = '', onBookPro
                 <button
                   type="button"
                   onClick={onBookProjectClick}
-                  className="w-full py-3.5 px-4 rounded-xl bg-yellow-400 hover:bg-yellow-500 text-black font-black text-xs transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer border border-yellow-500"
+                  className="w-full py-3.5 px-4 rounded-xl border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black font-black text-xs transition-all duration-200 shadow-md flex items-center justify-center gap-2 cursor-pointer active:scale-95 group"
                 >
                   <Calendar className="w-4 h-4 stroke-[2.5]" />
                   <span>Book A Project</span>
@@ -176,7 +176,7 @@ export const Contact: React.FC<ContactProps> = ({ initialSubject = '', onBookPro
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={soc.name}
-                        className="p-2.5 rounded-xl border border-zinc-300 dark:border-yellow-500/30 bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-300 hover:bg-yellow-400 hover:text-black hover:border-black transition-all cursor-pointer flex items-center justify-center"
+                        className="p-2.5 rounded-xl border-2 border-yellow-400/50 hover:border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-200 cursor-pointer flex items-center justify-center active:scale-95"
                       >
                         <SocIcon className="w-4 h-4" />
                       </a>
@@ -203,7 +203,7 @@ export const Contact: React.FC<ContactProps> = ({ initialSubject = '', onBookPro
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="mt-4 px-6 py-2.5 rounded-xl bg-yellow-400 text-black font-black text-xs cursor-pointer shadow-md border border-yellow-500 hover:bg-yellow-500"
+                    className="mt-4 px-6 py-2.5 rounded-xl border-2 border-yellow-400 bg-yellow-400 hover:bg-black text-black hover:text-yellow-400 font-black text-xs cursor-pointer shadow-md transition-all duration-200 active:scale-95"
                   >
                     Send Another Inquiry
                   </button>
@@ -305,7 +305,7 @@ export const Contact: React.FC<ContactProps> = ({ initialSubject = '', onBookPro
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-3.5 px-6 rounded-xl bg-yellow-400 hover:bg-yellow-500 text-black font-black text-xs uppercase tracking-wider transition-all shadow-lg shadow-yellow-400/20 flex items-center justify-center gap-2 cursor-pointer active:scale-98 disabled:opacity-60 border border-yellow-500"
+                    className="w-full py-3.5 px-6 rounded-xl border-2 border-yellow-400 bg-yellow-400 hover:bg-black text-black hover:text-yellow-400 font-black text-xs uppercase tracking-wider transition-all duration-200 shadow-lg shadow-yellow-400/20 flex items-center justify-center gap-2 cursor-pointer active:scale-95 disabled:opacity-60 group"
                   >
                     {isSubmitting ? (
                       <span>Sending Message...</span>

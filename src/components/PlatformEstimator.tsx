@@ -92,10 +92,10 @@ export const PlatformEstimator: React.FC<PlatformEstimatorProps> = ({ onSelectEs
                   <button
                     key={opt.id}
                     onClick={() => setPlatform(opt.id as any)}
-                    className={`p-3 rounded-xl border-2 text-left text-xs font-bold transition-all cursor-pointer ${
+                    className={`p-3 rounded-xl border-2 text-left text-xs font-bold transition-all duration-200 cursor-pointer active:scale-95 ${
                       platform === opt.id
-                        ? 'bg-yellow-400 text-black border-black shadow-md'
-                        : 'bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-100 border-zinc-300 dark:border-zinc-800 hover:border-yellow-400'
+                        ? 'border-yellow-400 bg-yellow-400 text-black shadow-md font-black'
+                        : 'border-yellow-400/40 bg-zinc-100 dark:bg-black text-black dark:text-yellow-300 hover:border-yellow-400 hover:bg-yellow-400/10'
                     }`}
                   >
                     <div className="font-extrabold">{opt.label}</div>
@@ -122,10 +122,10 @@ export const PlatformEstimator: React.FC<PlatformEstimatorProps> = ({ onSelectEs
                   <button
                     key={opt.id}
                     onClick={() => setProjectType(opt.id as any)}
-                    className={`p-3 rounded-xl border-2 text-center text-xs font-extrabold transition-all cursor-pointer ${
+                    className={`p-3 rounded-xl border-2 text-center text-xs font-extrabold transition-all duration-200 cursor-pointer active:scale-95 ${
                       projectType === opt.id
-                        ? 'bg-yellow-400 text-black border-black shadow-md'
-                        : 'bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-100 border-zinc-300 dark:border-zinc-800 hover:border-yellow-400'
+                        ? 'border-yellow-400 bg-yellow-400 text-black shadow-md font-black'
+                        : 'border-yellow-400/40 bg-zinc-100 dark:bg-black text-black dark:text-yellow-300 hover:border-yellow-400 hover:bg-yellow-400/10'
                     }`}
                   >
                     {opt.label}
@@ -148,10 +148,10 @@ export const PlatformEstimator: React.FC<PlatformEstimatorProps> = ({ onSelectEs
                   <button
                     key={opt.id}
                     onClick={() => setPageCount(opt.id as any)}
-                    className={`p-3 rounded-xl border-2 text-left text-xs font-bold transition-all cursor-pointer ${
+                    className={`p-3 rounded-xl border-2 text-left text-xs font-bold transition-all duration-200 cursor-pointer active:scale-95 ${
                       pageCount === opt.id
-                        ? 'bg-yellow-400 text-black border-black shadow-md'
-                        : 'bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-100 border-zinc-300 dark:border-zinc-800 hover:border-yellow-400'
+                        ? 'border-yellow-400 bg-yellow-400 text-black shadow-md font-black'
+                        : 'border-yellow-400/40 bg-zinc-100 dark:bg-black text-black dark:text-yellow-300 hover:border-yellow-400 hover:bg-yellow-400/10'
                     }`}
                   >
                     <div className="font-extrabold">{opt.label}</div>
@@ -176,10 +176,10 @@ export const PlatformEstimator: React.FC<PlatformEstimatorProps> = ({ onSelectEs
                   <button
                     key={opt.id}
                     onClick={() => setPrimaryGoal(opt.id as any)}
-                    className={`p-3 rounded-xl border-2 text-left text-xs font-extrabold transition-all cursor-pointer ${
+                    className={`p-3 rounded-xl border-2 text-left text-xs font-extrabold transition-all duration-200 cursor-pointer active:scale-95 ${
                       primaryGoal === opt.id
-                        ? 'bg-yellow-400 text-black border-black shadow-md'
-                        : 'bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-100 border-zinc-300 dark:border-zinc-800 hover:border-yellow-400'
+                        ? 'border-yellow-400 bg-yellow-400 text-black shadow-md font-black'
+                        : 'border-yellow-400/40 bg-zinc-100 dark:bg-black text-black dark:text-yellow-300 hover:border-yellow-400 hover:bg-yellow-400/10'
                     }`}
                   >
                     {opt.label}
@@ -238,10 +238,10 @@ export const PlatformEstimator: React.FC<PlatformEstimatorProps> = ({ onSelectEs
 
               <button
                 onClick={handleInquire}
-                className="w-full py-3.5 px-6 rounded-2xl bg-yellow-400 hover:bg-yellow-500 text-black font-black text-xs uppercase tracking-wider transition-all duration-200 shadow-lg shadow-yellow-400/30 flex items-center justify-center gap-2 cursor-pointer active:scale-98 border border-yellow-500"
+                className="w-full py-3.5 px-6 rounded-2xl border-2 border-yellow-400 bg-yellow-400 hover:bg-black text-black hover:text-yellow-400 font-black text-xs uppercase tracking-wider transition-all duration-200 shadow-lg shadow-yellow-400/30 flex items-center justify-center gap-2 cursor-pointer active:scale-95 group"
               >
                 <span>Request Proposal For This Scope</span>
-                <ArrowRight className="w-4 h-4 stroke-[2.5]" />
+                <ArrowRight className="w-4 h-4 stroke-[2.5] transition-transform duration-200 group-hover:translate-x-1" />
               </button>
             </div>
           </div>

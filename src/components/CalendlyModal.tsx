@@ -82,19 +82,19 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = ({ isOpen, onClose })
                   href={PERSONAL_INFO.calendly}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg text-zinc-400 hover:text-yellow-400 hover:bg-zinc-800 transition-colors text-xs font-semibold hidden md:flex items-center gap-1"
+                  className="px-3 py-1.5 rounded-xl border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-200 text-xs font-bold hidden md:flex items-center gap-1.5 active:scale-95 shadow-sm"
                   title="Open in new tab if embed doesn't render"
                 >
-                  <ExternalLink className="w-3.5 h-3.5" />
+                  <ExternalLink className="w-3.5 h-3.5 stroke-[2.5]" />
                   <span>Open Fullscreen</span>
                 </a>
 
                 <button
                   onClick={onClose}
-                  className="p-2 rounded-xl bg-zinc-800 hover:bg-yellow-400 hover:text-black text-zinc-300 transition-all cursor-pointer border border-zinc-700"
+                  className="p-2 rounded-xl border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-200 cursor-pointer active:scale-95 shadow-sm"
                   aria-label="Close Calendly scheduler"
                 >
-                  <X className="w-5 h-5" />
+                  <X className="w-5 h-5 stroke-[2.5]" />
                 </button>
               </div>
             </div>

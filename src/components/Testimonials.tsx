@@ -143,18 +143,18 @@ export const Testimonials: React.FC = () => {
           <div className="flex items-center gap-3">
             <button
               onClick={handlePrev}
-              className="p-3.5 rounded-full border border-zinc-300 dark:border-yellow-500/40 bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-200 cursor-pointer active:scale-95"
+              className="p-3.5 rounded-full border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-200 cursor-pointer active:scale-95 shadow-sm"
               aria-label="Previous Review"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
             </button>
 
             <button
               onClick={handleNext}
-              className="p-3.5 rounded-full border border-zinc-300 dark:border-yellow-500/40 bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-200 cursor-pointer active:scale-95"
+              className="p-3.5 rounded-full border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-200 cursor-pointer active:scale-95 shadow-sm"
               aria-label="Next Review"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-5 h-5 stroke-[2.5]" />
             </button>
           </div>
         </div>

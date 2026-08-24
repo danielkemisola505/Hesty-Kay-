@@ -63,15 +63,15 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
           </p>
 
           {/* Filter Tabs */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
+          <div className="flex flex-wrap items-center justify-center gap-2.5 mt-8">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 rounded-full text-xs font-black transition-all cursor-pointer ${
+                className={`px-4.5 py-2 rounded-full text-xs font-black transition-all duration-200 cursor-pointer active:scale-95 ${
                   activeCategory === cat
-                    ? 'bg-yellow-400 text-black shadow-md border border-yellow-500'
-                    : 'bg-zinc-100 dark:bg-zinc-900 text-black dark:text-yellow-100 border border-zinc-300 dark:border-yellow-500/30 hover:border-yellow-400'
+                    ? 'border-2 border-yellow-400 bg-yellow-400 text-black shadow-md hover:bg-black hover:text-yellow-400'
+                    : 'border-2 border-yellow-400/60 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black'
                 }`}
               >
                 {cat}
@@ -99,7 +99,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                     <button
                       onClick={() => onSelectProject(project)}
-                      className="w-full py-2.5 px-4 rounded-xl bg-yellow-400 text-black font-extrabold text-xs flex items-center justify-center gap-2 shadow-lg hover:bg-yellow-500 transition-colors cursor-pointer border border-yellow-500"
+                      className="w-full py-2.5 px-4 rounded-xl border-2 border-yellow-400 bg-yellow-400 text-black hover:bg-black hover:text-yellow-400 font-extrabold text-xs flex items-center justify-center gap-2 shadow-lg transition-all duration-200 cursor-pointer active:scale-95 group/btn"
                     >
                       <Eye className="w-4 h-4 stroke-[2.5]" />
                       <span>View Case Study</span>
@@ -144,10 +144,10 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
               <div className="px-6 pb-6 pt-0">
                 <button
                   onClick={() => onSelectProject(project)}
-                  className="w-full py-2.5 px-4 rounded-xl border border-yellow-500 bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold text-xs transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-sm active:scale-98"
+                  className="w-full py-2.5 px-4 rounded-xl border-2 border-yellow-400 bg-black text-yellow-400 hover:bg-yellow-400 hover:text-black font-extrabold text-xs transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-sm active:scale-95 group/btn"
                 >
                   <span>View Project Details</span>
-                  <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                  <ArrowRight className="w-3.5 h-3.5 stroke-[2.5] transition-transform duration-200 group-hover/btn:translate-x-1" />
                 </button>
               </div>
             </div>
